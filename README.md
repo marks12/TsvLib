@@ -6,15 +6,16 @@ Library of classes and functions
 Simplest pattern. We can doing anything and be sure Singleton is exactly only one instance in program;
 
 ```php
+<?php
+
+declare(strict_type=1);
    
-   declare(strict_type=1);
+namespace MyNamespace;
    
-   namespace MyNamespace;
+use \TsvLib\Singleton;
    
-   use \TsvLib\Singleton;
-   
-   class MyClass extends Singleton 
-   {
+class MyClass extends Singleton 
+{
           
-   }
+}
 ```
