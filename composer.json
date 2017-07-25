@@ -1,0 +1,30 @@
+{
+    "name": "marks12/TsvLib",
+    "description": "Useful classes and function library",
+    "type":         "library",
+    "license":      "BSD-3-Clause",
+    "homepage": 	"https://github.com/marks12/TsvLib",
+    "keywords": [
+        "PHP classes library"
+    ],
+    "authors": [
+        {
+            "name":      "Vladimir Tsarevnikov",
+            "email":     "tsv@serveon.ru",
+            "homepage":  "http://serveon.ru/",
+            "role":      "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "TsvLib\\": ""
+        },
+        "psr-4": {
+            "TsvLib\\": ""
+        }
+    }
+}
