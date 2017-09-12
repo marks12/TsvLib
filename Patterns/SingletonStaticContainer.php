@@ -87,7 +87,7 @@ class SingletonStaticContainer extends Singleton
      * @return mixed
      * @throws Exception
      */
-    static public function get(string $key) : mixed
+    static public function get(string $key)
     {
         self::createInstance();
         self::validate_exists($key);
@@ -97,9 +97,9 @@ class SingletonStaticContainer extends Singleton
     /**
      * Add uniq non exists parameter to container
      * @param string $key
-     * @param mixed $value
+     * @param $value
      */
-    static public function add(string $key, mixed $value) : void
+    static public function add(string $key, $value) : void
     {
         self::createInstance();
         self::validate_not_exists($key);
@@ -109,9 +109,9 @@ class SingletonStaticContainer extends Singleton
     /**
      * Add parameter to container and override if exists
      * @param string $key
-     * @param mixed $value
+     * @param $value
      */
-    static public function overwrite(string $key, mixed $value) : void
+    static public function overwrite(string $key, $value) : void
     {
         self::createInstance();
         self::$_tsv_container[$key] = $value;
